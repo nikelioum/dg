@@ -1,0 +1,14 @@
+footer {
+    border-top: 1px solid #e5e5e5;
+}
+
+span.logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: #8b3dff;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: var(--bs-gray-500);
+    font-weight: 700;
+}
