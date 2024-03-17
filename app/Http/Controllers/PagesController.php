@@ -27,6 +27,11 @@ class PagesController extends Controller
     public function single_service($slug){
         
         $service = Service::where('slug', $slug)->first();
+
+        // If page not found, throw a 404 exception
+        if (!$service) {
+            return view ('404_page');
+        }
         
         return view('single_service', compact('service'));
     }
