@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Page;
+use App\Models\Block;
 
 class PagesController extends Controller
 {
@@ -43,7 +44,9 @@ class PagesController extends Controller
     //Contact page
     public function contact() {
 
-        return view('contact');
+        $lolo = BLock::where('id', 1)->first();
+
+        return view('contact', compact('lolo'));
     }
 
     //Static pages
