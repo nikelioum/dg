@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('title',$service->name)
+@section('meta_description', $service->short_description)
+@section('og_title', $service->name)
+@section('og_url', url()->current())
+@section('og_image', url('/storage/') . '/' . ltrim($service->main_image, '/'))
+@section('og_description', $service->short_description)
 @section('content')
 @include('partials.services.single_header')
     <div class="container single_service_content">

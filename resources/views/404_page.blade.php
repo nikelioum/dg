@@ -1,4 +1,10 @@
 @extends('layouts.main')
+@section('title','sadsadas')
+@section('meta_description', 'fdgfdgfd')
+@section('og_title', 'gfdgfdgdfg')
+@section('og_url', url()->current())
+@section('og_image', 'dsfdsfs')
+@section('og_description', 'sdfsdfds')
 @section('content')
 <!--404 error start-->
 <div class="container d-flex flex-column overflow-hidden">

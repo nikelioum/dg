@@ -34,12 +34,21 @@
     <link rel="stylesheet" href="../assets/css/theme.min.css" />
     <link rel="stylesheet" href="../assets/css/custom.css" />
 
-    <title>Saas v2 Business - Responsive Website Template | Block</title>
+    <title>@yield('title')</title>
+    <meta name="description" content="@yield('meta_description')">
+
+    <!-- Open Graph tags for Facebook -->
+    <meta property="og:title" content="@yield('og_title')" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="@yield('og_url')" />
+    <meta property="og:image" content="@yield('og_image')" />
+    <meta property="og:description" content="@yield('og_description')" />
+
 </head>
 
 <body>
     @include('partials.navbar')
-     @yield('content')
+    @yield('content')
     @include('partials.footer')
 
     <!-- Scroll top -->
