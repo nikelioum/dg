@@ -20,6 +20,9 @@ Route::get('/', [PagesController::class, 'index']);
 //Services page
 Route::get('/services', [PagesController::class, 'services']);
 
+//Single Service page
+Route::get('service/{slug}', [PagesController::class, 'single_service']);
+
 //About page
 Route::get('/about', [PagesController::class, 'about']);
 

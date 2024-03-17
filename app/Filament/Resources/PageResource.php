@@ -23,6 +23,7 @@ use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Card;
 use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\ToggleColumn;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class PageResource extends Resource
 {
@@ -38,7 +39,7 @@ class PageResource extends Resource
             ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
             Textarea::make('short_description')->required(),
             FileUpload::make('image')->required(),
-            RichEditor::make('body')->required(),
+            TinyEditor::make('body')->required(),
             TextInput::make('slug')->required(),
             Toggle::make('active')->required()
         ])

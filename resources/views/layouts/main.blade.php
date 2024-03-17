@@ -18,21 +18,21 @@
     <meta name="msapplication-config" content="assets/images/favicon/tile.xml" />
 
     <!-- Color modes -->
-    <script src="assets/js/vendors/color-modes.js"></script>
+    <script src="../assets/js/vendors/color-modes.js"></script>
 
     <!-- Libs CSS -->
-    <link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
-    <link href="assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet" />
+    <link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
 
     <!-- Scroll Cue -->
-    <link rel="stylesheet" href="assets/libs/scrollcue/scrollCue.css" />
+    <link rel="stylesheet" href="../assets/libs/scrollcue/scrollCue.css" />
 
     <!-- Box icons -->
-    <link rel="stylesheet" href="assets/fonts/css/boxicons.min.css" />
+    <link rel="stylesheet" href="../assets/fonts/css/boxicons.min.css" />
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" href="assets/css/theme.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="../assets/css/theme.min.css" />
+    <link rel="stylesheet" href="../assets/css/custom.css" />
 
     <title>Saas v2 Business - Responsive Website Template | Block</title>
 </head>
@@ -50,23 +50,23 @@
         </svg>
     </div>
     <!-- Libs JS -->
-    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
-    <script src="assets/libs/headhesive/dist/headhesive.min.js"></script>
+    <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="../assets/libs/headhesive/dist/headhesive.min.js"></script>
 
     <!-- Theme JS -->
-    <script src="assets/js/theme.min.js"></script>
+    <script src="../assets/js/theme.min.js"></script>
 
-    <script src="assets/libs/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/js/vendors/parallax.js"></script>
-    <script src="assets/libs/rellax/rellax.min.js"></script>
-    <script src="assets/js/vendors/rellax.js"></script>
+    <script src="../assets/libs/parallax-js/dist/parallax.min.js"></script>
+    <script src="../assets/js/vendors/parallax.js"></script>
+    <script src="../assets/libs/rellax/rellax.min.js"></script>
+    <script src="../assets/js/vendors/rellax.js"></script>
     <!-- Swiper JS -->
-    <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendors/swiper.js"></script>
-    <script src="assets/libs/scrollcue/scrollCue.min.js"></script>
-    <script src="assets/js/vendors/scrollcue.js"></script>
-    <script src="assets/js/vendors/pricing.js"></script>
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/vendors/swiper.js"></script>
+    <script src="../assets/libs/scrollcue/scrollCue.min.js"></script>
+    <script src="../assets/js/vendors/scrollcue.js"></script>
+    <script src="../assets/js/vendors/pricing.js"></script>
 </body>
 
 </html>

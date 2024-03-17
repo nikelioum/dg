@@ -22,6 +22,7 @@ use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Card;
+use Mohamedsabil83\FilamentFormsTinyeditor\Components\TinyEditor;
 
 class ServiceResource extends Resource
 {
@@ -37,7 +38,7 @@ class ServiceResource extends Resource
                 ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
                 Textarea::make('short_description')->required(),
                 FileUpload::make('main_image')->required(),
-                RichEditor::make('body')->required(),
+                TinyEditor::make('body')->required(),
                 TextInput::make('slug')->required(),
                 TextInput::make('tags')->required(),
                 TextInput::make('position')->required()->numeric(),

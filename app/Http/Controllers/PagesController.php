@@ -23,6 +23,14 @@ class PagesController extends Controller
         return view('services', compact('services'));
     }
 
+    //Single Service page
+    public function single_service($slug){
+        
+        $service = Service::where('slug', $slug)->first();
+        
+        return view('single_service', compact('service'));
+    }
+
     //About page
     public function about(){
         
