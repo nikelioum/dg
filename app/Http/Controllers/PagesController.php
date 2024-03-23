@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Service;
 use App\Models\Page;
 use App\Models\Block;
+use App\Models\Portfolio;
 
 class PagesController extends Controller
 {
@@ -45,13 +46,23 @@ class PagesController extends Controller
     //Portfolio page
     public function portfolio() {
 
-        return view('portfolio');
+        $portfolios = Portfolio::all();
+
+        $categories = Portfolio::pluck('category')->flatMap(function ($category) {
+            // Split categories by comma and trim each one
+            return array_map('trim', explode(',', $category));
+        })->unique();
+
+
+        return view('portfolio', compact('portfolios', 'categories'));
     }
 
     //Single portfolio page
     public function single_portfolio($slug) {
 
-        return view('single-portfolio');
+        $portfolio=Portfolio::where('slug', $slug)->first();
+
+        return view('single_portfolio', compact('portfolio'));
     }
 
     //Contact page
