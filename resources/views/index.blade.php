@@ -7,6 +7,8 @@
 @section('og_description', 'Αναζητάτε επαγγελματικές υπηρεσίες web development στην Ελλάδα; Η εμπειρία μας και η δέσμευσή μας για υψηλή ποιότητα στον σχεδιασμό ιστοσελίδων θα καλύψει κάθε ανάγκη σας. Επικοινωνήστε για περισσότερες πληροφορίες!')
 @section('content')
 @include('partials.home.hero')
+@include('partials.home.services')
+@include('partials.home.portfolio')
 @include('partials.home.clients')
 @include('partials.home.cta')
 @endsection

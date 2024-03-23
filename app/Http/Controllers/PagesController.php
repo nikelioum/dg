@@ -13,7 +13,10 @@ class PagesController extends Controller
     //Index page
     public function index(){
 
-        return view('index');
+        $portfolios = Portfolio::latest()->take(3)->get();
+        $services = Service::take(4)->get();
+
+        return view('index', compact('portfolios', 'services'));
     }
 
     //Services page
