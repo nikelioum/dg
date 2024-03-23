@@ -4,20 +4,17 @@
         <div class="row g-4">
             <div class="col-xl-5 col-lg-6 col-12">
                 <div class="mb-4">
-                    <small class="text-uppercase ls-md fw-semibold">who we
-                        are</small>
-                    <h2 class="h1 mt-4 mb-3">Believes in the power of
-                        creative strategy.</h2>
-                    <p class="mb-3">We are a web design and development
-                        agency. We specialise in bridging the gap between
-                        our clients and their goals.</p>
-                    <p class="mb-0">Consequat mauris nunc congue nisi vitae
-                        suscipit tellus mauris a. Amet mattis vulputate enim
-                        nulla aliquet porttitor lacus.</p>
+                    <small class="text-uppercase ls-md fw-semibold">Ποιοι Είμαστε</small>
+                    <h2 class="h1 mt-4 mb-3">Πιστεύουμε στη δύναμη της δημιουργικής στρατηγικής.</h2>
+                    <p class="mb-3">Είμαστε μια εταιρεία σχεδιασμού και ανάπτυξης ιστοσελίδων. Ειδικευόμαστε στο να
+                        γεφυρώνουμε το χάσμα μεταξύ των πελατών μας και των στόχων τους.</p>
+                    <p class="mb-0">Η συνέπεια είναι το κλειδί της επιτυχίας. Καθημερινά αφοσιωνόμαστε να προσφέρουμε
+                        τις καλύτερες λύσεις που θα ανταποκρίνονται στις ανάγκες των πελατών μας.</p>
                 </div>
 
-                <a href="./about.html" class="icon-link icon-link-hover">
-                    More about us
+
+                <a href="/our-work" class="icon-link icon-link-hover">
+                    Δείτε τα Έργα μας
                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
                         class="bi bi-arrow-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -31,7 +28,7 @@
                         <a href="#!">
                             <div class="rounded-3 card-lift"
                                 style="
-    background-image: url(../assets/images/about-img/about-grid-img-2.jpg);
+    background-image: url(../assets/images/about-img/about-1.jpg);
     background-repeat: no-repeat;
     height: 386px;
     background-size: cover;
@@ -43,7 +40,7 @@
                         <a href="#!">
                             <div class="mb-4 rounded-3 card-lift"
                                 style="
-    background-image: url(../assets/images/about-img/about-grid-img-1.jpg);
+    background-image: url(../assets/images/about-img/about-2.jpg);
     background-repeat: no-repeat;
     height: 180px;
     background-size: cover;
@@ -53,7 +50,7 @@
                         <a href="#!">
                             <div class="mb-2 rounded-3 card-lift"
                                 style="
-    background-image: url(../assets/images/about-img/about-grid-img-3.jpg);
+    background-image: url(../assets/images/about-img/about-3.jpg);
     background-repeat: no-repeat;
     height: 180px;
     background-size: cover;
@@ -82,9 +79,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h4>Expert Team</h4>
-                        <p class="mb-0">Vivamus eget neque lacus.
-                            Pellentesque egauris ex.</p>
+                        <h4>Εμπειροι Συνεργάτες</h4>
+                        <p class="mb-0">Είμαστε μια ομάδα επαγγελματιών με μακροχρόνια εμπειρία στον τομέα του web design και της ανάπτυξης ιστοσελίδων. Η γνώση και η δεξιοτεχνία μας είναι η εγγύηση για την επιτυχία του έργου σας.</p>
                     </div>
                 </div>
             </div>
@@ -98,9 +94,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h4>Award winning agency</h4>
-                        <p class="mb-0">Lorem ipsum, dolor sit amet
-                            consectetur elitorceat .</p>
+                        <h4>Καινοτόμες Λύσεις</h4>
+                        <p class="mb-0">Καινοτομία και δημιουργικότητα είναι οι βασικοί πυλώνες της λειτουργίας μας. Αναπτύσσουμε εξατομικευμένες λύσεις που ανταποκρίνονται στις ανάγκες των πελατών μας, προσφέροντας πάντα υψηλή ποιότητα και καινοτόμες ιδέες.</p>
                     </div>
                 </div>
             </div>
@@ -114,9 +109,8 @@
                         </svg>
                     </div>
                     <div>
-                        <h4>10 Year Exp.</h4>
-                        <p class="mb-0">Pellen tesque eget, mauris lorem
-                            iupsum neque lacus.</p>
+                        <h4>10 Χρόνια Εμπειρίας</h4>
+                        <p class="mb-0">Η εμπειρία μας διαρκεί εδώ και 10 χρόνια, κατά τα οποία έχουμε αποκτήσει την απαραίτητη εμπειρία και τεχνογνωσία στον χώρο του διαδικτυακού σχεδιασμού και της ανάπτυξης λογισμικού.</p>
                     </div>
                 </div>
             </div>
@@ -131,117 +125,69 @@
         <div class="row">
             <div class="col-xl-4 offset-xl-4 col-md-12">
                 <div class="text-center mb-xl-7 mb-5">
-                    <small class="text-uppercase ls-md fw-semibold text-primary">Our
-                        benefits</small>
-                    <h2 class="mt-3 mb-0">Work Happier With Us</h2>
+                    <small class="text-uppercase ls-md fw-semibold text-primary">ΠΛΕΟΝΕΚΤΗΜΑΤΑ</small>
+                    <h2 class="mt-3 mb-0">ΟΛΟΚΛΗΡΩΜΕΝΕΣ ΛΥΣΕΙΣ</h2>
                 </div>
             </div>
         </div>
         <div class="row g-6">
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-warning bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-prescription2 text-warning-emphasis" viewBox="0 0 16 16">
-                            <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2V6Z" />
-                            <path
-                                d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1V1Zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4H4ZM3 3h10V1H3v2Z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Inclusive Health Package</h4>
-                        <p class="mb-0">We care about your well-being, and
-                            offer dental and vision benefits for you and
-                            your family. No stress on health expenses.</p>
+                        <h4>Κατασκεύη Ιστοσελίδων</h4>
+                        <p class="mb-0">Ασχολούμαστε με την επαγγελματική κατασκευή ιστοσελίδων, προσφέροντας πρωτοποριακές λύσεις που ανταποκρίνονται στις ανάγκες και τις φιλοδοξίες των πελατών μας.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-danger bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-globe-asia-australia text-danger" viewBox="0 0 16 16">
-                            <path
-                                d="m10.495 6.92 1.278-.619a.483.483 0 0 0 .126-.782c-.252-.244-.682-.139-.932.107-.23.226-.513.373-.816.53l-.102.054c-.338.178-.264.626.1.736a.476.476 0 0 0 .346-.027ZM7.741 9.808V9.78a.413.413 0 1 1 .783.183l-.22.443a.602.602 0 0 1-.12.167l-.193.185a.36.36 0 1 1-.5-.516l.112-.108a.453.453 0 0 0 .138-.326ZM5.672 12.5l.482.233A.386.386 0 1 0 6.32 12h-.416a.702.702 0 0 1-.419-.139l-.277-.206a.302.302 0 1 0-.298.52l.761.325Z" />
-                            <path
-                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM1.612 10.867l.756-1.288a1 1 0 0 1 1.545-.225l1.074 1.005a.986.986 0 0 0 1.36-.011l.038-.037a.882.882 0 0 0 .26-.755c-.075-.548.37-1.033.92-1.099.728-.086 1.587-.324 1.728-.957.086-.386-.114-.83-.361-1.2-.207-.312 0-.8.374-.8.123 0 .24-.055.318-.15l.393-.474c.196-.237.491-.368.797-.403.554-.064 1.407-.277 1.583-.973.098-.391-.192-.634-.484-.88-.254-.212-.51-.426-.515-.741a6.998 6.998 0 0 1 3.425 7.692 1.015 1.015 0 0 0-.087-.063l-.316-.204a1 1 0 0 0-.977-.06l-.169.082a1 1 0 0 1-.741.051l-1.021-.329A1 1 0 0 0 11.205 9h-.165a1 1 0 0 0-.945.674l-.172.499a1 1 0 0 1-.404.514l-.802.518a1 1 0 0 0-.458.84v.455a1 1 0 0 0 1 1h.257a1 1 0 0 1 .542.16l.762.49a.998.998 0 0 0 .283.126 7.001 7.001 0 0 1-9.49-3.409Z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Flexible Working Style</h4>
-                        <p class="mb-0">We are 100% remote-friendly, work
-                            with team mates from different time zones across
-                            the globe.</p>
+                        <h4>Κατασκεύη Eshop</h4>
+                        <p class="mb-0">Δημιουργούμε εκπληκτικά eshop που αναδεικνύουν την επιχείρησή σας στο διαδίκτυο. Με εξειδικευμένες λύσεις και σύγχρονο σχεδιασμό, δημιουργούμε μια απρόσκοπτη εμπειρία αγοράς για τους πελάτες σας.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-people-fill text-primary" viewBox="0 0 16 16">
-                            <path
-                                d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Diversity and Inclusion</h4>
-                        <p class="mb-0">Our strength lies in team members
-                            from diverse backgrounds with a culture of
-                            inclusion where everyone feels respected.</p>
+                        <h4>Custom Applications</h4>
+                        <p class="mb-0">Δημιουργούμε προσαρμοσμένες εφαρμογές που ανταποκρίνονται ακριβώς στις ανάγκες σας. Με προηγμένες τεχνολογίες και εξατομικευμένο σχεδιασμό, δημιουργούμε λύσεις που ενισχύουν την αποτελεσματικότητα και την επιτυχία της επιχείρησής σας.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-success bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-easel text-success" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0a.5.5 0 0 1 .473.337L9.046 2H14a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1h-1.85l1.323 3.837a.5.5 0 1 1-.946.326L11.092 11H8.5v3a.5.5 0 0 1-1 0v-3H4.908l-1.435 4.163a.5.5 0 1 1-.946-.326L3.85 11H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1h4.954L7.527.337A.5.5 0 0 1 8 0zM2 3v7h12V3H2z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Learn And Grow</h4>
-                        <p class="mb-0">We help you grow in your career with
-                            ongoing mentorship, and send you to events so
-                            you can build your network.</p>
+                        <h4>Τεχνική Υποστήριξη</h4>
+                        <p class="mb-0">Παρέχουμε ολοκληρωμένη τεχνική υποστήριξη που εξασφαλίζει τη σταθερή λειτουργία των ψηφιακών σας υπηρεσιών. Με έμπειρο προσωπικό και γρήγορη ανταπόκριση, είμαστε εδώ για να λύσουμε κάθε τεχνικό πρόβλημα που μπορεί να αντιμετωπίσετε.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-info bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-emoji-heart-eyes text-info" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
-                            <path
-                                d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Balanced Working Life</h4>
-                        <p class="mb-0">We offer an open vacation policy
-                            with a recommended 4-weeks per year. Recharge
-                            whenever you need to.</p>
+                        <h4>Ταχύτητα & Ασφάλεια</h4>
+                        <p class="mb-0">Στην εταιρεία μας, δίνουμε μεγάλη έμφαση στην ταχύτητα και την ασφάλεια των ψηφιακών λύσεών μας. Με τη χρήση προηγμένων τεχνολογιών και πρακτικών ασφαλείας, εξασφαλίζουμε την ομαλή λειτουργία των ιστοσελίδων και εφαρμογών σας, παρέχοντας ταυτόχρονα την απαραίτητη προστασία από δυνητικές απειλές και κινδύνους στο διαδίκτυο.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="d-flex">
-                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                            class="bi bi-cash-stack text-primary" viewBox="0 0 16 16">
-                            <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
-                            <path
-                                d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z" />
-                        </svg>
+                    <div class="icon-xl icon-shape rounded-circle bg-primary bg-opacity-10 flex-shrink-0 about-list-bullet">
                     </div>
                     <div class="ms-4">
-                        <h4>Generous Perks Program</h4>
-                        <p class="mb-0">We offer several perk stipends to
-                            support healthy home office ergonomics,
-                            continuous learning, wellness and connectivity.
+                        <h4>Custom Design</h4>
+                        <p class="mb-0">Η προσαρμοσμένη σχεδίαση είναι η καρδιά του έργου μας. Κάθε λύση που δημιουργούμε είναι μοναδική και προσαρμοσμένη στις ανάγκες και τις προτιμήσεις του κάθε πελάτη μας. Με μεράκι και δημιουργικότητα, δημιουργούμε εντυπωσιακά σχέδια που ξεχωρίζουν και ενισχύουν το brand και την παρουσία σας στο διαδίκτυο.
                         </p>
                     </div>
                 </div>
@@ -251,19 +197,25 @@
 </section>
 <!--our benefits-->
 
+<style>
+.about-list-bullet{
+    width:25px;
+    height:25px;
+}
+</style>
+
 <!--asked question-->
 <section class="mb-xl-9 mb-4">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 offset-lg-1 col-md-12 col-12">
                 <div class="text-center mb-7">
-                    <h2>Frequently asked questions</h2>
+                    <h2>Συχνές Ερωτήσεις</h2>
                     <p class="mb-0">
-                        Can’t find any answer for your question?
+                        Δίνουμε απαντήσεις στις πιο κοινές ερωτήσεις που μας κάνετε
                         <br />
-                        Ask our
-                        <a href="#" class="text-primary">customer
-                            support</a>
+                        Εαν θέλετε να ρωτήσετε
+                        <a href="/contact" class="text-primary">Επικοινωνήστε μαζί μας</a>
                     </p>
                 </div>
             </div>
@@ -276,16 +228,13 @@
                             <a href="#" class="text-reset d-flex justify-content-between align-items-center"
                                 data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
                                 aria-controls="collapseOne">
-                                Can I trial block before paying?
+                                Τι υπηρεσίες προσφέρει η εταιρεία σας;
                                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                             <div class="mt-3">
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipisicing elit. Quae harum adipisci
-                                possimus et. Iusto pariatur iste nam
-                                incidunt ratione modi.
+                                Προσφέρουμε πλήρη γκάμα υπηρεσιών ανάπτυξης ιστοσελίδων, συμπεριλαμβανομένου του σχεδιασμού, της ανάπτυξης και της συντήρησης ιστοσελίδων, καθώς και προσαρμοσμένων εφαρμογών και λύσεων.
                             </div>
                         </div>
                     </div>
@@ -295,19 +244,14 @@
                             <a href="#" class="text-reset d-flex justify-content-between align-items-center"
                                 data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true"
                                 aria-controls="collapseTwo">
-                                How are additional plan billed?
+                                Πώς μπορώ να ξεκινήσω ένα έργο με την εταιρεία σας;
                                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse show"
+                        <div id="collapseTwo" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="mt-3">
-                                Sed urna felis, dapibus quis leo nec, luctus
-                                auctor augue. Nam gravida placerat sem vitae
-                                rutrum. Integer accumsan, enim et facilisis
-                                eleifend, ante ligula
-                                ornare nulla, sed pharetra tortor diam eget
-                                magna.
+                                Είναι εύκολο! Απλά επικοινωνήστε μαζί μας μέσω email ή τηλεφώνου και θα σας κατευθύνουμε στα επόμενα βήματα.
                             </div>
                         </div>
                     </div>
@@ -316,18 +260,14 @@
                             <a href="#" class="text-reset d-flex justify-content-between align-items-center"
                                 data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
                                 aria-controls="collapseThree">
-                                When should I change my plan?
+                                Ποιος είναι ο μέσος χρόνος ανάπτυξης μιας ιστοσελίδας;
                                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                         </h2>
                         <div id="collapseThree" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="mt-3">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Inventore tenetur cum
-                                doloremque iusto molestiae. Minus beatae
-                                quam cumque modi quidem asperiores
-                                aliquam pariatur in iste.
+                                Ο μέσος χρόνος ανάπτυξης εξαρτάται από την πολυπλοκότητα του έργου. Μπορούμε να παρέχουμε εκτιμήσεις μετά από μια προσωπική συνάντηση και ανάλυση των αναγκών σας.
                             </div>
                         </div>
                     </div>
@@ -336,18 +276,14 @@
                             <a href="#" class="text-reset d-flex justify-content-between align-items-center"
                                 data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
                                 aria-controls="collapseFour">
-                                What payment methods do you offer?
+                                Παρέχετε υποστήριξη μετά την ολοκλήρωση του έργου;
                                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                         </h2>
                         <div id="collapseFour" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="mt-3">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Inventore tenetur cum
-                                doloremque iusto molestiae. Minus beatae
-                                quam cumque modi quidem asperiores
-                                aliquam pariatur in iste.
+                                Ναι, παρέχουμε συνεχή υποστήριξη για να εξασφαλίσουμε τη σωστή λειτουργία και απόδοση της ιστοσελίδας σας.
                             </div>
                         </div>
                     </div>
@@ -356,38 +292,14 @@
                             <a href="#" class="text-reset d-flex justify-content-between align-items-center"
                                 data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
                                 aria-controls="collapseFive">
-                                What is your refund policy?
+                                Μπορείτε να δημιουργήσετε προσαρμοσμένες εφαρμογές για τις ανάγκες μου;
                                 <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
                             </a>
                         </h2>
                         <div id="collapseFive" class="accordion-collapse collapse"
                             data-bs-parent="#accordionExample">
                             <div class="mt-3">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Inventore tenetur cum
-                                doloremque iusto molestiae. Minus beatae
-                                quam cumque modi quidem asperiores
-                                aliquam pariatur in iste.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="border mb-2 rounded-3 p-3">
-                        <h2 class="h5 mb-0">
-                            <a href="#" class="text-reset d-flex justify-content-between align-items-center"
-                                data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
-                                aria-controls="collapseSix">
-                                How are paid plans billed when moving other
-                                plan?
-                                <span class="chevron-arrow"><i class="bi bi-chevron-down"></i></span>
-                            </a>
-                        </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="mt-3">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Inventore tenetur cum
-                                doloremque iusto molestiae. Minus beatae
-                                quam cumque modi quidem asperiores
-                                aliquam pariatur in iste.
+                                Βεβαίως! Έχουμε εμπειρία στη δημιουργία προσαρμοσμένων εφαρμογών που πληρούν τις ακριβείς ανάγκες και απαιτήσεις των πελατών μας.
                             </div>
                         </div>
                     </div>

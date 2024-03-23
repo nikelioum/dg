@@ -5,10 +5,11 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
                 <div class="text-center">
-                    <small class="text-uppercase ls-md fw-bold text-primary">Services</small>
-                    <h1 class="mt-4">We provide client-centric services</h1>
-                    <p class="lead">Maximize your website's capabilities and reach its full potential with our
-                        services.</p>
+                    <small class="text-uppercase ls-md fw-bold text-primary">ΤΑ ΕΡΓΑ ΜΑΣ</small>
+                    <h1 class="mt-4">Ανακαλύψτε τα Έργα Μας και Εμπνευστείτε</h1>
+                    <p class="lead">Εξερευνήστε το ποικίλο πορτφόλιο μας και αφεθείτε στην έμπνευση πίσω από κάθε έργο
+                        που έχουμε αναπτύξει.</p>
+
                 </div>
             </div>
         </div>

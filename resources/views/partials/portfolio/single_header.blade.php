@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
                 <div class="text-center">
-                    <small class="text-uppercase ls-md fw-bold text-primary">Υπηρεσία</small>
+                    <small class="text-uppercase ls-md fw-bold text-primary">PROJECT</small>
                     <h1 class="mt-4">{{$portfolio->name}}</h1>
                     <p class="lead">{{$portfolio->short_description}}</p>
                 </div>
