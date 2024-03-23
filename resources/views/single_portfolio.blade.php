@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', $portfolio->name)
+@section('title', $portfolio->name . ' | Τα Έργα μας | DGSolutions')
 @section('meta_description', $portfolio->short_description)
 @section('og_title', $portfolio->name)
 @section('og_url', url()->current())

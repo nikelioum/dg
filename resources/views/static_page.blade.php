@@ -1,10 +1,12 @@
 @extends('layouts.main')
-@section('title','sadsadas')
-@section('meta_description', 'fdgfdgfd')
-@section('og_title', 'gfdgfdgdfg')
+
+@section('title', $static_page->title)
+@section('meta_description', $static_page->short_description)
+@section('og_title', $static_page->title)
 @section('og_url', url()->current())
 @section('og_image', 'dsfdsfs')
-@section('og_description', 'sdfsdfds')
+@section('og_description', $static_page->short_description)
+
 @section('content')
     @include('partials.static_page.header')
     <div class="container">
