@@ -106,7 +106,7 @@
                                 </li>
                             </ul>
                             <div class="d-grid mt-5">
-                                <a href="#"
+                                <a href="/contact"
                                     class="btn btn-outline-primary">ΕΝΔΙΑΦΕΡΟΜΑΙ</a>
                             </div>
                         </div>
@@ -240,7 +240,7 @@
                                 </li>
                             </ul>
                             <div class="d-grid mt-5">
-                                <a href="#"
+                                <a href="/contact"
                                     class="btn btn-outline-primary">ΕΝΔΙΑΦΕΡΟΜΑΙ</a>
                             </div>
                         </div>
@@ -374,7 +374,7 @@
                                 </li>
                             </ul>
                             <div class="d-grid mt-5">
-                                <a href="#"
+                                <a href="/contact"
                                     class="btn btn-outline-primary">ΕΝΔΙΑΦΕΡΟΜΑΙ</a>
                             </div>
                         </div>
