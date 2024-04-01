@@ -44,6 +44,10 @@
     <meta property="og:image" content="@yield('og_image')" />
     <meta property="og:description" content="@yield('og_description')" />
 
+     <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="309dbdf8-3422-46b9-9188-f67fcf6bc7d9" type="text/javascript" async></script>
+    
+    <script id="CookieDeclaration" src="https://consent.cookiebot.com/309dbdf8-3422-46b9-9188-f67fcf6bc7d9/cd.js" type="text/javascript" async></script>
+
 </head>
 
 <body>

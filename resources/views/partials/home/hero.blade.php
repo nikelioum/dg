@@ -26,7 +26,7 @@
                         <div class="bg-light-subtle p-md-4 p-2 rounded-4 border scene" data-relative-input="true">
                             <div data-depth="0.09">
                                 <figure data-cues="zoomIn" data-delay="900">
-                                    <img src="../assets/images/landings/saas/app-screen-1.jpg" alt="landing"
+                                    <img src="../assets/images/home/cms-intro.png" alt="κατασκεύη ιστοσελίδας"
                                         class="w-100 rounded-4 shadow border" />
                                 </figure>
                             </div>
