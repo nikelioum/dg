@@ -13,8 +13,8 @@ class PagesController extends Controller
     //Index page
     public function index(){
 
-        $portfolios = Portfolio::latest()->take(3)->get();
-        $services = Service::take(2)->get();
+        $portfolios = Portfolio::latest()->take(2)->get();
+        $services = Service::take(4)->get();
 
         return view('index', compact('portfolios', 'services'));
     }
