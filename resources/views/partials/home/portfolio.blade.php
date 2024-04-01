@@ -13,7 +13,7 @@
         <div class="table-responsive-lg">
             <div class="row flex-nowrap pb-4 pb-lg-0 me-5 me-lg-0">
                 @foreach($portfolios as $portfolio)
-                <div class="col-lg-4 col-md-6 col-12">
+                <div class="col-lg-6 col-md-6 col-12">
                     <div>
                         <figure class="lift position-relative btn-arrow mb-4">
                             <a href="/our-work/{{$portfolio->slug}}">
