@@ -10,7 +10,6 @@
 @include('partials.home.services')
 @include('partials.home.plans')
 @include('partials.home.portfolio')
-@include('partials.home.clients')
 @include('partials.home.cta')
 @endsection
 
