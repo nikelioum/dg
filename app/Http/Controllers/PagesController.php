@@ -7,6 +7,7 @@ use App\Models\Service;
 use App\Models\Page;
 use App\Models\Block;
 use App\Models\Portfolio;
+use App\Models\Submission;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
@@ -135,7 +136,8 @@ class PagesController extends Controller
                 'response_time' => $responseTime,
                 'status_code' => $statusCode,
                 'number_of_requests' => $numberOfRequests,
-                'rank' => $rank
+                'rank' => $rank,
+                'website'=>$url
             ]);
         } catch (RequestException $e) {
             // Handle request exceptions
@@ -213,11 +215,21 @@ class PagesController extends Controller
             'email' => 'required|email',
         ]);
 
-        // Retrieve the email from the request
+        // Retrieve the email and response data from the request
         $email = $request->input('email');
+        $responseData = $request->input('response');
 
+        // Create a new Submission instance and set its attributes
+        $submission = new Submission();
+        $submission->email = $email;
+        $submission->response_time = $responseData['response_time'];
+        $submission->requests = $responseData['number_of_requests'];
+        $submission->rank = $responseData['rank'];
+        $submission->website = $responseData['website'];
+
+        // Save the submission to the database
+        $submission->save();
         
-
         // You can return a response to the AJAX request if needed
         return response()->json(['message' => 'Email sent successfully'], 200);
     }

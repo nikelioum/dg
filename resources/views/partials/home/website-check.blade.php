@@ -159,7 +159,8 @@ $(document).ready(function() {
                                     type: 'POST',
                                     data: {
                                         email: email,
-                                        _token: '{{ csrf_token() }}'
+                                        _token: '{{ csrf_token() }}',
+                                        response: response // Pass the response from the first request
                                     },
                                     success: function(response) {
                                         // Handle the response from the second AJAX request
@@ -196,6 +197,7 @@ $(document).ready(function() {
     });
 });
 </script>
+
 
 <style>
 p.rank-round {
