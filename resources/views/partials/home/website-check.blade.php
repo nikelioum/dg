@@ -169,7 +169,8 @@ $(document).ready(function() {
                                             // Remove the email input and button
                                             contactForm.remove();
                                             // Show a thank you message
-                                            $('#performance-test').append('<p>Thanks! We will contact you soon.</p>');
+                                            $('#performance-test').append('<p>Θα επικοινωνήσουμε άμεσα μαζί σας</p>');
+                                            $('#performance-test').append('<a href="#" onclick="location.reload();">Νέα Αξιολόγηση</a>');
                                         }
                                     },
                                     error: function(xhr, status, error) {
