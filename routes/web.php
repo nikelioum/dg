@@ -38,6 +38,12 @@ Route::get('/contact', [PagesController::class, 'contact']);
 //Static Pages
 Route::get('/{slug}', [PagesController::class, 'static_pages']);
 
+//Website checker
+Route::post('/website-checker', [PagesController::class, 'website_checker']);
+
+//Website checker send the email
+Route::post('/website-checker-email-send', [PagesController::class, 'website_checker_send_email']);
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
