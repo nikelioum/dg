@@ -85,128 +85,168 @@
 
 
 <script>
-$(document).ready(function() {
-    $('#submitBtn').click(function(event) {
-        event.preventDefault();
-        var websiteUrl = $('#website').val();
-        var url = $('form').data('url');
+    $(document).ready(function() {
+        $('#submitBtn').click(function(event) {
+            event.preventDefault();
+            var websiteUrl = $('#website').val();
+            var url = $('form').data('url');
 
-        // Show loader
-        $('#loader').removeClass('d-none');
+            // Show loader
+            $('#loader').removeClass('d-none');
 
-        $.ajax({
-            url: url,
-            type: 'POST',
-            data: {
-                website: websiteUrl,
-                _token: '{{ csrf_token() }}'
-            },
-            success: function(response) {
-                // Handle the response from the first AJAX request
-                console.log(response);
-                // Hide loader
-                $('#loader').addClass('d-none');
-                $('#website-field').addClass('d-none');
-                // Clear any existing content in the performance-test div
-                $('#performance-test').empty();
+            $.ajax({
+                url: url,
+                type: 'POST',
+                data: {
+                    website: websiteUrl,
+                    _token: '{{ csrf_token() }}'
+                },
+                success: function(response) {
+                    // Handle the response from the first AJAX request
+                    console.log(response);
+                    // Hide loader
+                    $('#loader').addClass('d-none');
+                    $('#website-field').addClass('d-none');
+                    // Clear any existing content in the performance-test div
+                    $('#performance-test').empty();
 
-                // Create a new div to contain the response data
-                var responseDataDiv = $('<div>');
+                    // Create a new div to contain the response data
+                    var responseDataDiv = $('<div>');
 
-                // Add response data to the new div
-                responseDataDiv.append('<p>Χρόνος Απόκρισης: ' + response.response_time +
-                    ' δευτερόλεπτα</p>');
-                responseDataDiv.append('<p>Αριθμός Αιτημάτων: ' + response
-                    .number_of_requests + '</p>');
+                    // Add response data to the new div
+                    responseDataDiv.append('<p>Χρόνος Απόκρισης: ' + response
+                        .response_time +
+                        ' δευτερόλεπτα</p>');
+                    responseDataDiv.append('<p>Αριθμός Αιτημάτων: ' + response
+                        .number_of_requests + '</p>');
 
-                // Display the rank
-                responseDataDiv.append('<p class="rank-round">' + response.rank + '</p>');
+                    // Display the rank
+                    responseDataDiv.append('<p class="rank-round">' + response.rank +
+                        '</p>');
 
-                // Append the new div to the performance-test div
-                $('#performance-test').append(responseDataDiv);
+                    // Append the new div to the performance-test div
+                    $('#performance-test').append(responseDataDiv);
 
-                // Hide the submit button
-                $('#submitBtn').hide();
+                    // Hide the submit button
+                    $('#submitBtn').hide();
 
-                // Inside the success callback of your AJAX request
-                var contactButton = $('<button>')
-                    .addClass('btn btn-primary')
-                    .text('ΕΠΙΚΟΙΝΩΝΙΑ')
-                    .click(function() {
-                        // Remove the button
-                        $(this).remove();
-                        // Create a new form element
-                        var contactForm = $('<form>').addClass('mt-3');
+                    // Inside the success callback of your AJAX request
+                    var contactButton = $('<button>')
+                        .addClass('btn btn-primary')
+                        .text('ΕΠΙΚΟΙΝΩΝΙΑ')
+                        .click(function() {
+                            // Remove the button
+                            $(this).remove();
+                            // Create a new form element
+                            var contactForm = $('<form>').addClass('mt-3');
 
-                        // Create an email input field
-                        var emailInput = $('<input>')
-                            .attr('type', 'email')
-                            .attr('placeholder', 'Εισάγεται το email σας')
-                            .addClass('form-control mb-2')
-                            .prop('required', true) // Make the email input required
-                            .appendTo(contactForm);
+                            // Create an email input field
+                            var emailInput = $('<input>')
+                                .attr('type', 'email')
+                                .attr('placeholder', 'Εισάγεται το email σας')
+                                .addClass('form-control mb-2')
+                                .prop('required', true) // Make the email input required
+                                .appendTo(contactForm);
 
-                        // Create a submit button
-                        var submitButton = $('<button>')
-                            .addClass('btn btn-primary')
-                            .text('ΑΠΟΣΤΟΛΗ')
-                            .click(function(event) {
-                                event.preventDefault();
-                                var email = emailInput.val();
-                                // Make the second AJAX request to send the email
-                                $.ajax({
-                                    url: '/website-checker-email-send',
-                                    type: 'POST',
-                                    data: {
-                                        email: email,
-                                        _token: '{{ csrf_token() }}',
-                                        response: response // Pass the response from the first request
-                                    },
-                                    success: function(response) {
-                                        // Handle the response from the second AJAX request
-                                        console.log(response);
-                                        // If the email was sent successfully, show a message and remove the email input and button
-                                        if (response.message === 'Email sent successfully') {
-                                            // Remove the email input and button
-                                            contactForm.remove();
-                                            // Show a thank you message
-                                            $('#performance-test').append('<p>Θα επικοινωνήσουμε άμεσα μαζί σας</p>');
-                                            $('#performance-test').append('<a href="#" onclick="location.reload();">Νέα Αξιολόγηση</a>');
+                            var emailErrorDiv = $('<div>').attr('id', 'email-error')
+                                .appendTo(contactForm);
+
+                            // Create a div to hold the checkbox and label
+                            var checkboxDiv = $('<div>').addClass('mb-2').appendTo(contactForm);
+
+                            // Create a disabled checkbox input field
+                            var checkboxInput = $('<input>')
+                                .attr('type', 'checkbox')
+                                .addClass('form-check-input')
+                                .prop('disabled', true) // Make the checkbox disabled
+                                .prop('checked',
+                                true) // Make the checkbox checked by default
+                                .appendTo(checkboxDiv);
+
+                            // Create a label for the checkbox
+                            var checkboxLabel = $('<label>')
+                                .addClass('form-check-label ms-2')
+                                .text('Συμφωνώ με τους όρους')
+                                .appendTo(checkboxDiv);
+
+                            // Create a submit button
+                            var submitButton = $('<button>')
+                                .addClass('btn btn-primary')
+                                .text('ΑΠΟΣΤΟΛΗ')
+                                .click(function(event) {
+                                    event.preventDefault();
+                                    var email = emailInput.val();
+                                    // Make the second AJAX request to send the email
+                                    $.ajax({
+                                        url: '/website-checker-email-send',
+                                        type: 'POST',
+                                        data: {
+                                            email: email,
+                                            _token: '{{ csrf_token() }}',
+                                            response: response // Pass the response from the first request
+                                        },
+                                        success: function(response) {
+                                            // Handle the response from the second AJAX request
+                                            console.log(response);
+                                            // If the email was sent successfully, show a message and remove the email input and button
+                                            if (response.message ===
+                                                'Email sent successfully'
+                                                ) {
+                                                // Remove the email input and button
+                                                contactForm.remove();
+                                                // Show a thank you message
+                                                $('#performance-test')
+                                                    .append(
+                                                        '<p>Θα επικοινωνήσουμε άμεσα μαζί σας</p>'
+                                                        );
+                                                $('#performance-test')
+                                                    .append(
+                                                        '<a href="#" onclick="location.reload();">Νέα Αξιολόγηση</a>'
+                                                        );
+                                            }
+                                        },
+                                        error: function(xhr, status,
+                                        error) {
+                                            console.error(xhr
+                                                .responseText);
+                                            $('#email-error').html(
+                                                '<p class="text-danger">Το email δεν είναι σωστό.</p>'
+                                                );
                                         }
-                                    },
-                                    error: function(xhr, status, error) {
-                                        console.error(xhr.responseText);
-                                    }
-                                });
-                            })
-                            .appendTo(contactForm);
+                                    });
+                                })
+                                .appendTo(contactForm);
 
-                        // Append the new form to the container
-                        $('#performance-test').append(contactForm);
-                    });
+                            // Append the new form to the container
+                            $('#performance-test').append(contactForm);
+                        });
 
-                // Append the new button to the container
-                $('#performance-test').append(contactButton);
-            },
-            error: function(xhr, status, error) {
-                console.error(xhr.responseText);
-                // Hide loader
-                $('#loader').addClass('d-none');
-            }
+                    // Append the new button to the container
+                    $('#performance-test').append(contactButton);
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText);
+                    // Hide loader
+                    $('#loader').addClass('d-none');
+                    // Show error message
+                    $('#performance-test').html(
+                        '<p class="text-danger">Παρουσιάστηκε σφάλμα. Παρακαλώ δοκιμάστε ξανά με διαφορετικό URL.</p>'
+                        );
+                }
+            });
+
         });
     });
-});
 </script>
 
 
 <style>
-p.rank-round {
-    display: inline-block;
-    padding: 10px 20px;
-    border: 2px solid #8b3dff;
-    border-radius: 50%;
-    font-size: 25px;
-    font-weight: 700;
-}
+    p.rank-round {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #8b3dff;
+        border-radius: 50%;
+        font-size: 25px;
+        font-weight: 700;
+    }
 </style>
-
