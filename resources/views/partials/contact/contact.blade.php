@@ -94,12 +94,12 @@
                                         <div class="invalid-feedback">Επιλέξτε τον λόγο επικοινωνίας</div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
-                                        <label for="contactPhoneInput" class="form-label">Τηλέφωνο Επικοινωνίας</label>
+                                        <label for="contactPhoneInput" class="form-label">Τηλέφωνο Επικοινωνίας <span class="text-danger">*</span></label>
                                         <input type="tel" class="form-control" id="contactPhoneInput" name="phone" required />
                                         <div class="invalid-feedback">Εισάγεται το τηλέφωνο σας</div>
                                     </div>
                                     <div class="col-md-12">
-                                        <label for="contactTextarea" class="form-label">Το μήνυμα σας</label>
+                                        <label for="contactTextarea" class="form-label">Το μήνυμα σας <span class="text-danger">*</span></label>
                                         <textarea class="form-control" id="contactTextarea" name="content" placeholder="Το μήνυμα σας..." rows="4" required></textarea>
                                         <div class="invalid-feedback">Εισάγεται το μήνυμα σας</div>
                                     </div>
