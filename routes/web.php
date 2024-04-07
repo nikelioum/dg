@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
-
+use App\Http\Controllers\MailController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -43,6 +43,12 @@ Route::post('/website-checker', [PagesController::class, 'website_checker']);
 
 //Website checker send the email
 Route::post('/website-checker-email-send', [PagesController::class, 'website_checker_send_email']);
+
+//Mail
+Route::get('/contact/submit-email', [MailController::class, 'submit_email']);
+
+//Sitemap
+Route::get('/sitemap.xml', [PagesController::class, 'sitemap']);
 
 Auth::routes();
 

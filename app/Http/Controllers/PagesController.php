@@ -90,6 +90,11 @@ class PagesController extends Controller
     public function static_pages($slug)
     {
 
+        if ($slug === 'sitemap.xml') {
+            $sitemap = $this-> sitemap();
+            return($sitemap);
+        }
+
         $static_page = Page::where('slug', $slug)->where('active', true)->first();
 
         // If page not found, throw a 404 exception
@@ -99,6 +104,14 @@ class PagesController extends Controller
 
         return view('static_page', compact('static_page'));
     }
+
+     //sitemap
+     public function sitemap() {
+        $static_pages = Page::all();
+        $portfolios = Portfolio::all();
+        $services = Service::all();
+        return response()->view('sitemap',compact('portfolios','services','static_pages'))->header('Content-Type', 'text/xml');
+      }
 
     //Website checker
     public function website_checker(Request $request)
