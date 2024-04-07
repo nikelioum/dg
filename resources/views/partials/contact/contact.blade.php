@@ -62,13 +62,14 @@
                     <div class="col-md-7 col-12">
                         <div class="card shadow-sm">
                             <div class="card-body">
-                                <form class="row g-3 needs-validation" novalidate>
+                                <form class="row g-3 needs-validation" action="/contact/submit-email" novalidate>
+                                    @csrf
                                     <div class="col-lg-6 col-md-12">
                                         <label for="contactFirstNameInput" class="form-label">
                                             Ονοματεπώνυμο
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <input type="text" class="form-control" id="contactFirstNameInput"
+                                        <input type="text" class="form-control" id="contactFirstNameInput" name="fullname"
                                             required />
                                         <div class="invalid-feedback">Εισάγεται το ονοματεπώνυμο σας</div>
                                     </div>
@@ -77,12 +78,12 @@
                                             Email
                                             <span class="text-danger">*</span>
                                         </label>
-                                        <input type="email" class="form-control" id="contactEmailInput" required />
+                                        <input type="email" class="form-control" id="contactEmailInput" name="email" required />
                                         <div class="invalid-feedback">Εισάγεται το email σας</div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <label for="contactCompanyNameInput" class="form-label">Ενδιαφέρομαι για</label>
-                                        <select class="form-select" aria-label="Default select example">
+                                        <select class="form-select" name="reason" aria-label="Default select example">
                                             <option value="Κάντε μια επιλογή">Κάντε μια επιλογή</option>
                                             <option value="Κατασκεύη Ιστοσελίδας">Κατασκεύη Ιστοσελίδας</option>
                                             <option value="Κατασκεύη Eshop">Κατασκεύη Eshop</option>
@@ -94,18 +95,35 @@
                                     </div>
                                     <div class="col-lg-6 col-md-12">
                                         <label for="contactPhoneInput" class="form-label">Τηλέφωνο Επικοινωνίας</label>
-                                        <input type="tel" class="form-control" id="contactPhoneInput" required />
+                                        <input type="tel" class="form-control" id="contactPhoneInput" name="phone" required />
                                         <div class="invalid-feedback">Εισάγεται το τηλέφωνο σας</div>
                                     </div>
                                     <div class="col-md-12">
                                         <label for="contactTextarea" class="form-label">Το μήνυμα σας</label>
-                                        <textarea class="form-control" id="contactTextarea" placeholder="Το μήνυμα σας..." rows="4" required></textarea>
+                                        <textarea class="form-control" id="contactTextarea" name="content" placeholder="Το μήνυμα σας..." rows="4" required></textarea>
                                         <div class="invalid-feedback">Εισάγεται το μήνυμα σας</div>
                                     </div>
                                     <div class="d-grid">
                                         <button class="btn btn-primary" type="submit">ΑΠΟΣΤΟΛΗ</button>
                                     </div>
                                 </form>
+                                @if (session()->has('message'))
+                                    <!--Success Alert-->
+                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                        {{ session()->get('message') }}
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                    </div>
+                                    <!--End of Success Alert-->
+                                    @endif
+                                    @if ($errors->any())
+                                    <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                    </div>
+                                @endif
                             </div>
                         </div>
                     </div>
