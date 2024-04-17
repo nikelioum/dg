@@ -44,7 +44,7 @@
                     </div>
 
                     <h5>Τηλέφωνο επικοινωνίας</h5>
-                    <p class="mb-0">Καλέστε μας <br><a class="text-primary" href="tel:690000000">690000000</a></p>
+                    <p class="mb-0">Καλέστε μας <br><a class="text-primary" href="tel:6988698437">6988698437</a></p>
                 </div>
             </div>
         </div>
