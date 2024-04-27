@@ -1,3 +1,4 @@
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=662ca71aa65df900205b9556&product=sticky-share-buttons&source=platform" async="async"></script>
 <section class="mb-xl-9 my-4">
     <div class="container">
         <div class="row mb-5">
@@ -55,5 +56,6 @@
             </article>
         @endforeach
         </div>
+        <div class="sharethis-sticky-share-buttons"></div>
     </div>
 </section>

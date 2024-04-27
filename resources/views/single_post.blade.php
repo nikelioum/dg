@@ -6,6 +6,7 @@
 @section('og_image', url('/storage/') . '/' . ltrim($article->main_image, '/'))
 @section('og_description', $article->short_description)
 @section('content')
+<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=662ca71aa65df900205b9556&product=sticky-share-buttons&source=platform" async="async"></script>
 <div class="pattern-square"></div>
     <div class="py-xl-9 py-4">
         <div class="container">
@@ -38,6 +39,7 @@
             </div>
         </div>
     </div>
+    <div class="sharethis-sticky-share-buttons"></div>
 @include('partials.home.cta')
 <script>
 // Select all images inside .single_service_content
