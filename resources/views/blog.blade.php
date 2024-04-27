@@ -1,0 +1,11 @@
+@extends('layouts.main')
+@section('title','Νέα & Tips για το Web Design & Development | DGSolutions')
+@section('meta_description', 'Διαβάστε χρήσιμα άρθρα για αποδοτικές ιστοσελίδες και ηλεκτρονικά καταστήματα.')
+@section('og_title', 'Νέα & Tips για το Web Design & Development | DGSolutions')
+@section('og_url', url()->current())
+@section('og_image', 'dsfdsfs')
+@section('og_description', 'Διαβάστε χρήσιμα άρθρα για αποδοτικές ιστοσελίδες και ηλεκτρονικά καταστήματα.')
+@section('content')
+@include('partials.blog.header')
+@include('partials.blog.posts')
+@endsection

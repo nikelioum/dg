@@ -29,6 +29,12 @@ Route::get('/about', [PagesController::class, 'about']);
 //Portfolio page
 Route::get('/our-work', [PagesController::class, 'portfolio']);
 
+//BLog page
+Route::get('/blog', [PagesController::class, 'blog']);
+
+//Single Article page
+Route::get('/blog/{slug}', [PagesController::class, 'single_post']);
+
 //Single Portfolio page
 Route::get('/our-work/{slug}', [PagesController::class, 'single_portfolio']);
 

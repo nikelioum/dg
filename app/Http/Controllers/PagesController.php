@@ -8,6 +8,7 @@ use App\Models\Page;
 use App\Models\Block;
 use App\Models\Portfolio;
 use App\Models\Submission;
+use App\Models\Article;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\RequestException;
 
@@ -75,6 +76,25 @@ class PagesController extends Controller
         $portfolio = Portfolio::where('slug', $slug)->first();
 
         return view('single_portfolio', compact('portfolio'));
+    }
+
+
+    //Blog page
+    public function blog()
+    {
+
+        $articles = Article::where('active', 1)->get();
+
+        return view('blog', compact('articles'));
+    }
+
+
+    //Single Blog page
+    public function single_post($slug)
+    {
+        $article= Article::where('slug', $slug)->first();
+
+        return view('single_post', compact('article'));
     }
 
     //Contact page
