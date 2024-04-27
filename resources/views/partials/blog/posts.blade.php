@@ -4,12 +4,12 @@
         <div class="row mb-5">
             <div class="col-lg-5 col-md-7 col-12">
                 <div class="row g-2 g-sm-3 align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12">
+                    {{-- <div class="col-lg-6 col-md-6 col-12">
                         <form>
                             <label for="searchInput" class="form-label visually-hidden">Αναζήτηση Άρθρου</label>
                             <input type="search" class="form-control" id="searchInput" placeholder="Κατασκεύη Ιστοσελίδας...">
                         </form>
-                    </div>
+                    </div> --}}
                     {{-- <div class="col-lg-6 col-md-6 col-12">
                         <label for="categoryList" class="form-label visually-hidden">Search Category</label>
                         <select class="form-select" id="categoryList">
