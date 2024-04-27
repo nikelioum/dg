@@ -130,7 +130,8 @@ class PagesController extends Controller
         $static_pages = Page::all();
         $portfolios = Portfolio::all();
         $services = Service::all();
-        return response()->view('sitemap',compact('portfolios','services','static_pages'))->header('Content-Type', 'text/xml');
+        $articles = Article::all();
+        return response()->view('sitemap',compact('portfolios','services','static_pages', 'articles'))->header('Content-Type', 'text/xml');
       }
 
     //Website checker

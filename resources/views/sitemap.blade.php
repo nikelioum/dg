@@ -24,6 +24,20 @@
     </url>
     @endforeach
     <url>
+        <loc>{{ url('/blog') }}</loc>
+        <lastmod>{{ \Carbon\Carbon::now()->tz('UTC')->toAtomString() }}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    @foreach ($articles as $article)
+        <url>
+            <loc>{{ url('/blog') }}/{{ $article->slug }}</loc>
+            <lastmod>{{ $article->created_at->tz('UTC')->toAtomString() }}</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.8</priority>
+        </url>
+    @endforeach
+    <url>
         <loc>{{ url('/about') }}</loc>
         <lastmod>{{ \Carbon\Carbon::now()->tz('UTC')->toAtomString() }}</lastmod>
         <changefreq>weekly</changefreq>
