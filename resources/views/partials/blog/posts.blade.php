@@ -41,7 +41,7 @@
                     @endforeach
 
                 <h3 class="my-3 lh-base h4">
-                    <a href="blog-single.html" class="text-reset">{{$article->title}}</a>
+                    <a href="/blog/{{$article->slug}}" class="text-reset">{{$article->title}}</a>
                 </h3>
                 <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
                     <div class="d-flex align-items-center">
